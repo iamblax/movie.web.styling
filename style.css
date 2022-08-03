@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    
+    height: 50px;
+}
+
+.logo-container{
+    flex: 1;
+    
+}
+
+.logo{
+    font-family: 'Sen', sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 3px 5px rgb(249, 92, 2);
+    color: rgb(255, 213, 0)
+
+}
+
+
+
+.menu-container{
+   flex: 6;
+   
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30px;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+
+.profile-container{
+   flex: 2;
+   
+}
+
+
+.side-bar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.profile-container{
+     flex: 2;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     
+
+}
+
+.profile-pic{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+
+    
+}
+
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.toggle{
+    width: 47px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.toggle-icon{
+    color: rgb(227, 196, 21);
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.left-side-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+
+
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container{
+    margin-left: 50px;
+}
+
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+    
+    
+}
+
+.featured-title{
+    width: 200px;
+    
+}
+
+.featured-desc{
+    
+    color: whitesmoke;
+
+    
+}
+
+.fe-button{
+    background-color:  rgb(179, 16, 16);;
+    color: white;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: bold;
+
+}
+
+.movie-list-title{
+    font-size: bold;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.movie-list-container{
+    padding: 0 20px;
+    margin-top: 4rem;
+}
+
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    object-fit: cover;
+    width: 205px;
+    border-radius: 25px;
+    
+    
+}
+
+.movie-list-item{
+    margin-right:30px;
+    position: relative;
+    
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+.movie-list-item:hover .movie-list-item-title{
+    opacity: 1;
+}
+.movie-list-item:hover .movie-list-item-desc{
+    opacity: 1;
+}
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+.movie-list-item:hover .movie-download-button{
+    opacity: 1;
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item-title{
+    
+   font-size: 24px;
+   font-weight:normal ;
+   position: absolute;
+   top: 10%;
+   margin-right: 50%;
+   left: 60px;
+   width: 30px;
+   margin-top: 23%;
+   opacity: 0;
+   transition: 1s all ease-in-out;
+   
+   
+   
+}
+
+
+
+.movie-list-item-desc{
+    background-color: rgba(249, 235, 235, 0.2);
+    font-size: 14px;
+    padding: 10px;
+    position: absolute;
+    top: 7%;
+    margin-right: 30%;
+    left: 50px;
+    opacity: 0;
+    
+    
+    
+ }
+ 
+.movie-list-item-button{
+    padding: 10px;
+    background-color: rgb(179, 16, 16);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 33px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-download-button{
+    padding: 10px;
+    background-color: rgb(179, 16, 16);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 33px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    
+    
+    
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.arrow{
+    font-size: 100px;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    opacity: .3;
+    cursor: pointer;
+    color: rgb(254, 247, 247);
+    
+
+
+    
+}
+
+
+.container.active{ 
+    background-color:rgb(251, 239, 232);
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.side-bar.active{
+    background-color: blanchedalmond;
+}
+
+.left-side-icon.active{
+    color: black;
+}
+
+
+.toggle.active{
+    background-color:black ;
+}
+
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-26.6px);
+}
+
+ @media only screen and (max-width:940px){
+    .menu-container{
+        display: none;
+    }
+ }
