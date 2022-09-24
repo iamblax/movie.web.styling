@@ -1,3 +1,4 @@
+//arrow javascript
 const arrow = document.querySelectorAll(".arrow");
 const movieLists = document.querySelectorAll(".movie-list")
 
@@ -7,7 +8,7 @@ arrow.forEach((arrow, i)=>{
     arrow.addEventListener("click", () => {
         clickCounter++;
         const ratio = (Math.floor(window.innerWidth/270));
-     if(itemNumber - (6 + clickCounter) + (4.5 - ratio) >= 0){
+     if(itemNumber - (6 + clickCounter) + (5 - ratio) >= 0){
          movieLists[i].style.transform = `translateX(${
            movieLists[i].computedStyleMap().get("transform")[0].x.value
           - 300}px)`;
@@ -22,8 +23,9 @@ arrow.forEach((arrow, i)=>{
     console.log(Math.floor(window.innerWidth/270));
 });
 
+   
 
-
+    //toogle ball
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(
     ".container, .movie-list-title, .navbar-container, .side-bar, .left-side-icon, .toggle"

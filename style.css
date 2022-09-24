@@ -150,6 +150,12 @@ body{
 
 .featured-title{
     width: 200px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
     
 }
 
@@ -190,7 +196,7 @@ body{
     transition: all 1s ease-in-out;
     object-fit: cover;
     width: 205px;
-    border-radius: 25px;
+    border-radius: 15px;
     
     
 }
